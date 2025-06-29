@@ -243,7 +243,7 @@ p {
 
 .head {
   padding: 50px 20px;
-  background-color: 111;
+  background-color:#111;
   color: white;
   max-width: 900px;
   margin-left: 40px;
@@ -283,28 +283,28 @@ p {
   color: #ccc;
 }
 
-.mail{
-    padding: 20px;
-    background-color: #111;
-    color: white;
-    text-align: center;
-    margin-top: 9px;
-}
-.mail h2 {
-  font-size: 24px;
-  margin-bottom: 15px;
-}
-.mail p {
-  font-size: 16px;
-  margin-bottom: 20px;
-}
 .mail input[type="email"] {
   padding: 10px;
   width: 300px;
   border: none;
   border-radius: 4px;
   margin-right: 10px;
+  transition: border-color 0.3s ease;
 }
+
+.mail input[type="email"]:focus {
+  outline: none;
+  border: 2px solid crimson;
+}
+
+.mail input[type="email"]::placeholder {
+  color: black;
+}
+
+.mail input[type="email"]:focus::placeholder {
+  color: #999;
+}
+
 .mail button {
   padding: 10px 20px;
   border: none;
@@ -312,33 +312,18 @@ p {
   background-color: crimson;
   color: white;
   cursor: pointer;
-}
-.mail button:hover {
-  background-color: darkred;
-}
-.mail input[type="email"]:focus {
-  outline: none;
-  border: 2px solid crimson;
-}
-.mail input[type="email"]::placeholder {
-  color: black;
-}
-.mail input[type="email"]:focus::placeholder {
-  color: #999;
-}   
-.mail input[type="email"] {
-  transition: border-color 0.3s ease;
-}
-.mail button {
   transition: background-color 0.3s ease;
 }
-.mail input[type="email"] {
-  transition: border-color 0.3s ease;
-}
+
 .mail button:hover {
   background-color: darkred;
 }
-
+.mail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
 
 footer {
   background-color: #111;
@@ -484,6 +469,130 @@ footer .social-icons a:hover {
   .mail input[type="email"] {
     width: 320px;
   }
+}
+
+
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 16px;
+  }
+
+  .logo {
+    margin: 0 0 10px 0;
+    font-size: 24px;
+  }
+
+  .right-section {
+    flex-direction: column;
+    gap: 8px;
+    margin-right: 0;
+  }
+
+  .hero {
+    padding: 20px;
+    height: auto;
+  }
+
+  .content h2 {
+    font-size: 26px;
+  }
+
+  .line,
+  p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .text {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    width: 90%;
+  }
+
+  .bottom h2 {
+    font-size: 22px;
+  }
+
+  .reasons {
+    grid-template-columns: 1fr;
+  }
+
+  .Questions {
+    font-size: 22px;
+    padding: 16px;
+  }
+
+  .answers {
+    font-size: 14px;
+    padding: 14px;
+  }
+}
+
+.Get {
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.line {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.mail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.mail input[type="email"] {
+  padding: 10px;
+  width: 300px;
+  border: none;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+.mail input[type="email"]:focus {
+  outline: none;
+  border: 2px solid crimson;
+}
+
+.mail input[type="email"]::placeholder {
+  color: black;
+}
+
+.mail input[type="email"]:focus::placeholder {
+  color: #999;
+}
+
+.mail button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: crimson;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.mail button:hover {
+  background-color: darkred;
 }
 
 
