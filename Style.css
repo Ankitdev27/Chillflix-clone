@@ -474,27 +474,29 @@ footer .social-icons a:hover {
 @media (max-width: 480px) {
   header {
     flex-direction: row;
-    justify-content: space-evenly;
-    padding: 5px 10px;
-    gap: 8px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 16px;
+    position: sticky;
   }
 
   .logo {
-    margin: 0;
-    font-size: 28px;
+    font-size: 20px;
+    margin-left: 0;
   }
 
   .right-section {
+    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    margin: 0;
+    gap: 9px;
+    margin-right: 0;
   }
 
   .language, .up {
-    width: 140px;
-    text-align: center;
+    font-size: 13px;
+    padding: 6px 12px;
+    width: auto;
+    white-space: nowrap;
   }
 
   .hero {
