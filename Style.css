@@ -592,6 +592,31 @@ footer .social-icons a:hover {
     width: 100%;
   }
 }
+/* Ensure common center alignment on small screens */
+.hero, 
+.Get, 
+.Trending, 
+.bottom, 
+.head, 
+.mail {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+}
+
+.content h2,
+.Trending h2,
+.bottom h2,
+.head h2,
+.line,
+p {
+  text-align: center;
+}
+
 
 
 
