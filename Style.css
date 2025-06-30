@@ -471,28 +471,31 @@ footer .social-icons a:hover {
   }
 }
 
-
 @media (max-width: 480px) {
   header {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
     padding: 12px 16px;
   }
 
   .logo {
-    margin: 0 0 10px 0;
+    margin: 0;
     font-size: 24px;
   }
 
   .right-section {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
     gap: 8px;
-    margin-right: 0;
+    margin-top: 10px;
   }
 
   .hero {
     padding: 20px;
     height: auto;
+    text-align: center;
   }
 
   .content h2 {
@@ -510,9 +513,15 @@ footer .social-icons a:hover {
     padding: 8px 16px;
   }
 
+  .Get {
+    margin-top: 30px;
+  }
+
   .cards {
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    justify-items: center;
   }
 
   .box {
@@ -538,61 +547,10 @@ footer .social-icons a:hover {
   }
 }
 
-.Get {
-  text-align: center;
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.line {
-  font-size: 18px;
-  margin-bottom: 15px;
-  color: white;
-}
-
-.mail {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.mail input[type="email"] {
-  padding: 10px;
-  width: 300px;
-  border: none;
-  border-radius: 4px;
-  transition: border-color 0.3s ease;
-}
-
-.mail input[type="email"]:focus {
-  outline: none;
-  border: 2px solid crimson;
-}
-
-.mail input[type="email"]::placeholder {
-  color: black;
-}
-
-.mail input[type="email"]:focus::placeholder {
-  color: #999;
-}
-
-.mail button {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  background-color: crimson;
-  color: white;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.mail button:hover {
-  background-color: darkred;
+.box img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 
